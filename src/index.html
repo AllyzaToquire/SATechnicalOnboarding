@@ -1,302 +1,99 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
 
-        <!--=============== FAVICON ===============-->
-        <link rel="shortcut icon" href="" type="image/x-icon">
-
-        <!--=============== BOXICONS ===============-->
-        <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-        
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="swiper-bundle.min.css">
-
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="style.css">
-
-        <title>Resume</title>
-        
-        <!-- Favicon -->
-         <link rel="icon" href="favicon.png">
-    </head>
-    <body>
-        <!--=============== HEADER ===============-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">Ally.</a>
-
-
-                <!-- Theme change button -->
-                <i class="bx bx-moon change-theme" id="theme-button"></i>
-            </nav> 
-        </header>
-
-        <!--=============== MAIN ===============-->
-        <main class="main">
-          
-            <!--=============== ABOUT ===============-->
-            <section class="about section" id="about">
-                <span class="section__subtitle">About Myself</span>
-                <h2 class="section__title">About Me</h2>
-
-                <div class="about__container container grid">
-                    <img src="about.jpg" alt="" class="about__img">
-
-                    <div class="about__data">
-                        <div class="about__info">
-                            <div class="about__box">
-                                <i class='bx bx-award' ></i>
-                                <h3 class="about__title">03+</h3>
-                                <span class="about__subtitle">Years experience</span>
-                            </div>
-
-                            <div class="about__box">
-                                <i class='bx bx-briefcase-alt' ></i>
-                                <h3 class="about__title">15+</h3>
-                                <span class="about__subtitle">Completed Project</span>
-                            </div>
-
-                            <div class="about__box">
-                                <i class='bx bx-support' ></i>
-                                <h3 class="about__title">05+</h3>
-                                <span class="about__subtitle">Happy Clients</span>
-                            </div>
-                        </div>
-
-                        <p class="about__description">
-                            Frontend developer, I create web pages with UI / UX user interface, 
-                            I have years of experience and many clients are happy 
-                            with the projects carried out.
-                        </p>
-
-                        <a href="#contact" class="button">Contact Me</a>
-                    </div>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <main>
+        <article class="box">
+            <h1>Your Name</h1>
+            <div><a href="mailto:your.email@example.com">your-email@example.com</a></div>
+            
+            <section class="box">
+                <h2>
+                    <i class="fa fa-bullhorn" aria-hidden="true"></i>
+                    Social media
+                </h2>
+                <ul>
+                    <li><a href="https://github.com/<handle>">@github_handle</a></li>
+                    <li><a href="https://linkedin.com/in/<handle>">@linkedin_handle</a></li>
+                    <li><a href="https://twitter.com/<handle>">@twitter_handle</a></li>
+                </ul>    
+            </section>
+            
+            <section class="box">
+                <div class="education">
+                    <h2>
+                        <i class="fa fa-certificate" aria-hidden="true"></i>
+                        School name
+                    </h2>
+                    <h3>Major</h3>
+                    <ul>
+                        <li>GPA: 4.0</li>
+                        <li>Years</li>
+                    </ul>
                 </div>
             </section>
 
-            <!--=============== SKILLS ===============-->
-            <section class="skills section" id="skills">
-                <span class="section__subtitle">My Skills</span>
-                <h2 class="section__title">My Experience</h2>
-
-                <div class="skills__container container grid">
-                    
-                    <div class="skills__content">
-                        <h3 class="skills__title">Frontend Developer</h3>
-
-                        <div class="skills__box">
-                            <div class="skllls__group">
-                               
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">HTML</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">CSS</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skllls__group">
-                               
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">JavaScript</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">JQuery</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skills__content">
-                        <h3 class="skills__title">Backend Developer</h3>
-
-                        <div class="skills__box">
-                            <div class="skllls__group">
-                               
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">PHP</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">MySQL</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skllls__group">
-                               
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">Firebase</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">SQLite</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skills__content">
-                        <h3 class="skills__title">Graphic Designing</h3>
-
-                        <div class="skills__box">
-                            <div class="skllls__group">
-                               
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">Adobe Illustrator</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">Adobe Photoshop</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">Adobe After Effects</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="skllls__group">
-                               
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">Adobe Premiere Pro</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">Figma</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skills__content">
-                        <h3 class="skills__title">Other Stacks</h3>
-
-                        <div class="skills__box">
-                            <div class="skllls__group">
-                               
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">Java</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">C++</h3>
-                                        <span class="skills__level">Advanced</span>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="skllls__group">
-                               
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">C#</h3>
-                                        <span class="skills__level">Basic</span>
-                                    </div>
-                                </div>
-
-                                <div class="skills__data">
-                                    <i class='bx bxs-badge-check' ></i>
-
-                                    <div>
-                                        <h3 class="skills__name">Android Development</h3>
-                                        <span class="skills__level">Intermediate</span>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                </div>
+            <section class="box">
+                <h2>
+                    <i class="fa fa-check" aria-hidden="true"></i>
+                    Skills
+                </h2>
+                <ul>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>Visual Studio Code</li>
+                </ul>
             </section>
+        </article>
+        <article class="box">
+            <section class="box">
+                <h2>
+                    <i class="fa fa-briefcase" aria-hidden="true"></i>
+                    Experience
+                </h2>
+                <h3>Microsoft Learn Student Ambassador</h3>
+                <ul>
+                    <li>Some skill</li>
+                    <li>Another skill</li>
+                </ul>
+            </section>
+            <section class="box">
+                <h2>
+                    <i class="fa fa-building" aria-hidden="true"></i>
+                    Internships
+                </h2>
 
-         
-        </main>
-
-
-        <!--=============== MAIN JS ===============-->
-        <script src="main.js"></script>
-    </body>
+                <h3>Company name</h3>
+                <ul>
+                    <li>Accomplishment</li>
+                    <li>Another accomplishment</li>
+                </ul>
+            </section>
+            <section class="box">
+                <h2>
+                    <i class="fa fa-cubes" aria-hidden="true"></i>
+                    Projects
+                </h2>
+                
+                <h3>Great hackathon</h3>
+                <div>This was a great hack!</div>
+                <ul>
+                    <li>Cool technology used</li>
+                    <li>Prize won</li>
+                </ul>
+            </section>
+        </article>
+    
+    </main>
+</body>
 </html>
